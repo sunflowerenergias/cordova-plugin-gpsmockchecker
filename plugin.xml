@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-gpsmockchecker" 
+        version="1.0.4" 
+        xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <name>GPSMockChecker</name>
+    <description>Detect GPS Spoofing in Android Platform.</description>
+
+    <js-module name="GPSMockChecker" src="www/gpsmockchecker.js">
+        <clobbers target="gpsmockchecker" />
+    </js-module>
+    
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="GPSMockChecker">
+                <param name="android-package" value="es.sunflower.GPSMockChecker" />
+            </feature>
+        </config-file>
+
+        <framework src="com.google.android.gms:play-services-location:15.0.1" />
+
+        <config-file parent="/*" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        </config-file>
+        
+        <source-file src="src/android/GPSMockChecker.java" target-dir="src/es/sunflower" />
+    </platform>
+</plugin>

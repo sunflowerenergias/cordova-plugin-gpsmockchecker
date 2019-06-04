@@ -1,0 +1,19 @@
+{
+  "name": "cordova-plugin-gpsmockchecker",
+  "version": "1.0.4",
+  "description": "",
+  "cordova": {
+    "id": "cordova-plugin-gpsmockchecker",
+    "platforms": []
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "mock",
+    "location",
+    "checker",
+    "mock-location"
+  ],
+  "author": "Sunflower Energias SL",
+  "license": "Apache-2.0"
+}
