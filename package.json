@@ -9,12 +9,12 @@
   "keywords": [
     "ecosystem:cordova",
     "cordova-android",
-	"cordova plugin",
-	"cordova gps",
+	  "cordova plugin",
+	  "cordova gps",
     "mock",
     "location",
     "checker",
-    "mock-location"
+    "mock-location",
     "mock gps"
   ],
   "repository": {
